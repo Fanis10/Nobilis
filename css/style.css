@@ -677,6 +677,19 @@ li {
   background: #000000;
 }
 
+.nav {
+  padding: 50px;
+}
+.nav__list li {
+  font-size: 32px;
+}
+.nav__list li:not(:first-child) {
+  margin-top: 15px;
+}
+.nav__list li a:hover {
+  color: #c6c6c6;
+}
+
 .footer {
   background-color: #111929;
   padding: 15px 0;
