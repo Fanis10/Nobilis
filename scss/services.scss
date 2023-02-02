@@ -1,0 +1,96 @@
+.services {
+  padding: 215px 0 145px;
+  &__title {
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px 32px;
+    margin-top: 30px;
+  }
+  &__card {
+    background-color: #f5f5f5;
+    padding: 45px 15px 30px 45px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &:hover {
+      transform: translate(-10px, -10px);
+    }
+    &-title {
+      font-size: 24px;
+      line-height: 120%;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -0.005em;
+      color: #0060aa;
+    }
+    &-desc {
+      font-size: 18px;
+      line-height: 120%;
+      color: #1b1b1b;
+      padding-top: 20px;
+      margin-top: auto;
+      padding-right: 65px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp:8;
+      -webkit-box-orient: vertical;
+    }
+    &-images {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 28px;
+      bottom: 34px;
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .services {
+    padding: 160px 0 100px;
+    &__cards {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__card {
+      padding: 25px 15px 25px 25px;
+      &-title {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    padding: 120px 0 60px;
+    &__title {
+      font-size: 30px;
+    }
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+    &__card {
+      padding: 15px 15px;
+      &-title {
+        font-size: 22px;
+      }
+      &-desc {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-right: 30px;
+        -webkit-line-clamp:4;
+      }
+      &-images {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+  }
+}

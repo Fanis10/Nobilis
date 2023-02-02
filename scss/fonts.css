@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Calibri;
+  font-weight: 300;
+  src: url(../fonts/calibriLight.ttf) format("ttf"); }
+@font-face {
+  font-family: Calibri;
+  font-weight: 300;
+  src: url(../fonts/calibriLight.woff) format("woff"); }
+@font-face {
+  font-family: Calibri;
+  font-weight: 400;
+  src: url(../fonts/calibri.ttf) format("ttf"); }
+@font-face {
+  font-family: Calibri;
+  font-weight: 400;
+  src: url(../fonts/calibri.woff) format("woff"); }
+@font-face {
+  font-family: Calibri;
+  font-weight: 700;
+  src: url(../fonts/calibri_bold.ttf) format("ttf"); }
+@font-face {
+  font-family: Calibri;
+  font-weight: 700;
+  src: url(../fonts/calibri_bold.woff) format("woff"); }
+@font-face {
+  font-family: Century Gothic;
+  font-weight: 400;
+  src: url(../fonts/centurygothic.ttf) format("ttf"); }
+@font-face {
+  font-family: Century Gothic;
+  font-weight: 400;
+  src: url(../fonts/centurygothic.woff) format("woff"); }
+@font-face {
+  font-family: Century Gothic;
+  font-weight: 700;
+  src: url(../fonts/centurygothic_bold.ttf) format("ttf"); }
+@font-face {
+  font-family: Century Gothic;
+  font-weight: 700;
+  src: url(../fonts/centurygothic_bold.woff) format("woff"); }
+@font-face {
+  font-family: OpenSans;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Regular.ttf) format("ttf"); }
+@font-face {
+  font-family: OpenSans;
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Regular.woff) format("woff"); }
+@font-face {
+  font-family: OpenSans;
+  font-weight: 500;
+  src: url(../fonts/OpenSans-Medium.ttf) format("ttf"); }
+@font-face {
+  font-family: OpenSans;
+  font-weight: 500;
+  src: url(../fonts/OpenSans-Medium.woff) format("woff"); }
+@font-face {
+  font-family: OpenSans;
+  font-weight: 600;
+  src: url(../fonts/OpenSans-SemiBold.ttf) format("ttf"); }
+@font-face {
+  font-family: OpenSans;
+  font-weight: 600;
+  src: url(../fonts/OpenSans-SemiBold.woff) format("woff"); }
+
+/*# sourceMappingURL=fonts.css.map */

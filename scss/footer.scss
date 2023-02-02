@@ -1,0 +1,142 @@
+.footer {
+  background-color: #111929;
+  padding: 15px 0;
+  color: #ffffff;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__center {
+    margin-top: -50px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    span {
+      font-family: 'Century Gothic';
+      font-size: 30px;
+      line-height: 120%;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-left: 30px;
+    }
+  }
+  &__rights {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    margin-top: 20px;
+  }
+  &__info {
+    font-size: 24px;
+    line-height: 120%;
+    position: relative;
+    padding-bottom: 50px;
+    &:hover {
+      color: #c6c6c6;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 0);
+      width: 145px;
+      height: 1px;
+      background-color: #ffffff;
+    }
+  }
+  &__tel {
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: #c6c6c6;
+    }
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 41px;
+      height: 41px;
+      background-color: #fcbb01;
+      border-radius: 50%;
+    }
+    span {
+      font-family: 'OpenSans';
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: 0.005em;
+      margin-left: 27px;
+    }
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    &:hover {
+      color: #c6c6c6;
+    }
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      border-radius: 50%;
+    }
+    span {
+      font-family: 'OpenSans';
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: 0.005em;
+      margin-left: 27px;
+    }
+  }
+  &__date {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    margin-top: 30px;
+    padding-left: 41px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    &__inner {
+      display: block;
+    }
+    &__center {
+      margin-top: 30px;
+    }
+    &__info {
+      padding-bottom: 0;
+      &:after {
+        display: none;
+      }
+    }
+    &__right {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__logo {
+      img {
+        width: 70px;
+        height: auto;
+      }
+      span {
+        font-size: 18px;
+        margin-left: 15px;
+      }
+    }
+    &__info {
+      font-size: 20px;
+    }
+  }
+}

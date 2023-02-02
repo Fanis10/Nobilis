@@ -1,0 +1,229 @@
+.header {
+  background-color: #0060aa;
+  padding: 10px 0;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    span {
+      font-family: 'Century Gothic';
+      font-size: 30px;
+      line-height: 120%;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-left: 30px;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    font-size: 20px;
+    line-height: 120%;
+    position: relative;
+    &:not(:first-child) {
+      margin-left: 35px;
+    }
+    &--active {
+      &:after {
+        content: '';
+        position: absolute;
+        top: -49px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        height: 4px;
+        background-color: #fcbb01;
+      }
+    }
+    &:hover {
+      &:after {
+        content: '';
+        position: absolute;
+        top: -49px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        height: 4px;
+        background-color: #fcbb01;
+      }
+    }
+  }
+  &__tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    background-color: #fcbb01;
+    border-radius: 50%;
+    margin-left: 55px;
+  }
+  &__burger {
+    width: 35px;
+    height: 26px;
+    position: relative;
+    z-index: 5;
+    margin-left: 30px;
+    cursor: pointer;
+    display: none;
+    span {
+      height: 2px;
+      background: #fff;
+      transition: all 0.5s;
+      &:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 100%;
+      }
+      &:nth-child(3) {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .header {
+    &__link {
+      font-size: 18px;
+      &:not(:first-child) {
+        margin-left: 25px;
+      }
+      &--active {
+        &:after {
+          top: -51px;
+          height: 3px;
+        }
+      }
+      &:hover {
+        &:after {
+          top: -51px;
+          height: 3px;
+        }
+      }
+    }
+    &__tel {
+      margin-left: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .header {
+    top: 0;
+    &__nav {
+      position: absolute;
+      z-index: 4;
+      left: -100%;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      padding: 100px 15px 15px;
+      background: #0060aa;
+      transition: all 0.5s;
+      &--active {
+        left: 0;
+      }
+    }
+    &__burger {
+      display: block;
+      &--active {
+        span {
+          &:nth-child(1) {
+            transform: rotate(-45deg);
+            top: 50%;
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            transform: rotate(45deg);
+            top: 50%;
+          }
+        }
+      }
+    }
+    &__list {
+      flex-direction: column;
+    }
+    &__link {
+      &:not(:first-child) {
+        margin: 15px 0 0;
+      }
+      &--active {
+        &:after {
+          display: none;
+        }
+      }
+      &:hover {
+        color: #c6c6c6;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__logo {
+      img {
+        width: 70px;
+        height: auto;
+      }
+      span {
+        font-size: 18px;
+        margin-left: 15px;
+      }
+    }
+    &__burger {
+      width: 30px;
+      height: 20px;
+      margin-left: 15px;
+      span {
+        height: 1px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    &__logo {
+      img {
+        width: 60px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}
